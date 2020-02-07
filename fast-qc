@@ -1,9 +1,8 @@
-fastqc-0.1
-fastqc-0.10.1  fastqc-0.11.2  fastqc-0.11.3  fastqc-0.11.5 
+
 source fastqc-0.11.5
 
 mkdir /tsl/scratch/eiserman/fastqc_check
 mkdir /tsl/data/reads/ntalbot/transcriptional_regulation_of_melanin_in_magnaporthe_oryzae/kv50/kv50/raw/Kv50R1_1.fq.gz
 
 fastqc --outdir /tsl/scratch/eiserman/fastqc_check /tsl/data/reads/ntalbot/transcriptional_regulation_of_melanin_in_magnaporthe_oryzae/kv50/kv50/raw/Kv50R1_1.fq.gz 
-Started analysis of Kv50R1_1.fq.gz
+
