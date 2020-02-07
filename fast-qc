@@ -9,3 +9,6 @@ mkdir /tsl/data/reads/ntalbot/transcriptional_regulation_of_melanin_in_magnaport
 
 fastqc --outdir /tsl/scratch/eiserman/fastqc_check /tsl/data/reads/ntalbot/transcriptional_regulation_of_melanin_in_magnaporthe_oryzae/kv50/kv50/raw/Kv50R1_1.fq.gz 
 
+ #!/bin/bash
+ source fastqc-0.11.5
+ fastqc --outdir /tsl/scratch/eiserman/fastqc_check /tsl/data/reads/ntalbot/transcriptional_regulation_of_melanin_in_magnaporthe_oryzae/kv50/kv50/raw/Kv50R1_1.fq.gz\
