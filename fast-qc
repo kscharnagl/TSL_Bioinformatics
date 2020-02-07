@@ -9,6 +9,17 @@ mkdir /tsl/data/reads/ntalbot/transcriptional_regulation_of_melanin_in_magnaport
 
 fastqc --outdir /tsl/scratch/eiserman/fastqc_check /tsl/data/reads/ntalbot/transcriptional_regulation_of_melanin_in_magnaporthe_oryzae/kv50/kv50/raw/Kv50R1_1.fq.gz 
 
+Create a script in your text editor
+
  #!/bin/bash
  source fastqc-0.11.5
  fastqc --outdir /tsl/scratch/eiserman/fastqc_check /tsl/data/reads/ntalbot/transcriptional_regulation_of_melanin_in_magnaporthe_oryzae/kv50/kv50/raw/Kv50R1_1.fq.gz\
+ save on your desktop and then drag into hpc
+ 
+ then type in terminal
+ 
+ cat fastqc-command.sh
+ 
+ sbatch --mem 10g --cpus 2 fastqc-command.sh
+ 
+ squeue -u eiserman
