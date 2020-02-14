@@ -1,3 +1,5 @@
+### SCRIPT TO SUBMIT A SMALL JOB TO INTERACTIVE ####
+
 ls /tsl/scratch/eiserman/
 
 interactive
@@ -6,8 +8,12 @@ source fastqc-0.11.5
 
 mkdir /tsl/scratch/eiserman/fastqc_check
 mkdir /tsl/data/reads/ntalbot/transcriptional_regulation_of_melanin_in_magnaporthe_oryzae/kv50/kv50/raw/Kv50R1_1.fq.gz
+(Do we really need this upper command to make the dir there? is it something RAM needed to do?)
 
 fastqc --outdir /tsl/scratch/eiserman/fastqc_check /tsl/data/reads/ntalbot/transcriptional_regulation_of_melanin_in_magnaporthe_oryzae/kv50/kv50/raw/Kv50R1_1.fq.gz 
+
+
+### SCRIPT TO SUBMIT A JOB TO HPC ####
 
 Create a script in your text editor
 
